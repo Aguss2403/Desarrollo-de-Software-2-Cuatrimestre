@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+}
+
+main{
+    flex: 1;
+}
+
+nav{
+    width: 200px;
+    
+}
+
+li:hover{
+    cursor:pointer;
+    /* background-color: lightgray;  */
+    box-shadow: 5px 5px 5px gray;
+}
+
+header, nav, main, footer{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
