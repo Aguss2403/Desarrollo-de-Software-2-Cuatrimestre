@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.getElementById("generarTabla").addEventListener("click", function(){
+                const contenedor = document.getElementById("Containter");
+                const table = document.createElement("table");
+                const thead = document.createElement("thead");
+                const headeRow = document.createElement("tr");
+                const headers = ["Nombre", "Apellido", "Edad"];
+                headers.forEach(headerText => {
+                    const header = document.createElement("th");
+                    header.textContent = headerText;
+                    headeRow.appendChild(header);
+                });
+
+                thead.appendChild(headeRow);
+                table.appendChild(thead);
+
+
+                const tbody = document.createElement("tbody");
+                const data = [
+                    { nombre: "Juan", apellido: "Pérez", edad: 28 },
+                    { nombre: "María", apellido: "Gómez", edad: 34 },
+                    { nombre: "Luis", apellido: "Martínez", edad: 45, date: "2024-06-15" }
+                ];
+                    
+                
+
+                data.forEach(item => {
+                    const row = document.createElement("tr");
+                     Object.values(item).forEach(text => {
+                        const cell = document.createElement("td");
+                        cell.textContent = text;
+                        row.appendChild(cell);
+                    });
+
+
+
+
+
+
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+                console.log(data[0]["nombre"]);
+                //console.log(Object.keys(data[0]));
+
+                contenedor.appendChild(table);
+            })
+        })
+    </script>
+
+
+</head>
+<body>
+
+    <div id="Containter">
+        <button id="generarTabla">Generar Tabla</button>
+    </div>
+
+
+
+</body>
+</html>
