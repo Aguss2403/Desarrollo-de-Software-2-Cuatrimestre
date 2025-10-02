@@ -1,0 +1,38 @@
+[
+  {
+    "code": "A001",
+    "name": "Leche",
+    "stock": 25,
+    "expiryDate": "2025-10-15"
+  },
+  {
+    "code": "B002",
+    "name": "Arroz",
+    "stock": 100,
+    "expiryDate": null
+  },
+  {
+    "code": "A003",
+    "name": "Yogur",
+    "stock": 15,
+    "expiryDate": "2025-09-30"
+  },
+  {
+    "code": "A004",
+    "name": "Fideos",
+    "stock": 50,
+    "expiryDate": null
+  },
+  {
+    "code": "A005",
+    "name": "Atún en lata",
+    "stock": 40,
+    "expiryDate": "2027-01-01"
+  },
+  {
+    "code": "A006",
+    "name": "Galletitas",
+    "stock": 0,
+    "expiryDate": "2025-12-20"
+  }
+]
