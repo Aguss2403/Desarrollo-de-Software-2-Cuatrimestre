@@ -6,7 +6,7 @@ const errorStyle = {
     marginTop: "4px",
 };
 
-const Input = ({ label, type, name, value, onChange, error }) => {
+const Input = ({ label, type, name, value, onChange, error, placeholder }) => {
 
     return(
         <div>
@@ -20,6 +20,7 @@ const Input = ({ label, type, name, value, onChange, error }) => {
             name={name}
             value={value}
             onChange={onChange}
+            placeholder={placeholder}
             />
             {error && <div style={errorStyle}>{error}</div>}
             <br />

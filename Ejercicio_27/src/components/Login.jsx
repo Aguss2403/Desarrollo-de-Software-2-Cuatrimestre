@@ -59,6 +59,7 @@ const Login = () => {
           value={formData.username}
           onChange={handleChange}
           error={errors.username}
+          placeholder="Ingrese su nombre de usuario"
         />
         <Input
           label="Contraseña"
@@ -67,6 +68,7 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
           error={errors.password}
+          placeholder="Ingrese su contraseña"
         />
         <button type="submit">Iniciar Sesión</button>
       </form>
