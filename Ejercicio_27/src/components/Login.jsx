@@ -73,6 +73,7 @@ const Login = () => {
         <button type="submit">Iniciar Sesión</button>
       </form>
     </div>
+
   );
 
 
